@@ -31,4 +31,7 @@ public class BankAc {
     public void showBalance(){
         System.out.println(accountHolder + "'s balance: "+balance);
     }
+    public void demo(){
+        System.out.println("hello");
+    }
 }
