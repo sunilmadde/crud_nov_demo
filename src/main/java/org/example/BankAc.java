@@ -10,28 +10,29 @@ public class BankAc {
         this.accountHolder = accountHolder;
     }
 
-    public void deposit(double amount){
-        if(amount>0){
+    public void deposit(double amount) {
+        if (amount > 0) {
             balance += amount;
             System.out.println(amount + " deposited successfully");
-        }
-        else {
+        } else {
             System.out.println("Invalid amount");
         }
     }
-    public void withdraw(double amount){
-        if(amount >0 && amount<=balance){
-            balance-=amount;
-            System.out.println(amount+"withdrwan successfully");
-        }
-        else {
+
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            System.out.println(amount + "withdrwan successfully");
+        } else {
             System.out.println("Insufficent amount or invalid amount");
         }
     }
-    public void showBalance(){
-        System.out.println(accountHolder + "'s balance: "+balance);
+
+    public void showBalance() {
+        System.out.println(accountHolder + "'s balance: " + balance);
     }
-    public void demo(){
+
+    public void demo() {
         System.out.println("hello");
         System.out.print("Helloisdjfn");
     }
